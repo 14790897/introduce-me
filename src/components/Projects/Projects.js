@@ -8,7 +8,9 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
-
+import cookiesClerk from "../../Assets/Projects/cookiesclerk.jpg";
+import paperAI from "../../Assets/Projects/paperAI.png";
+import handwritingWeb from "../../Assets/Projects/handwritingWeb.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -23,38 +25,46 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={paperAI}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="PaperAI"
+              description="AI Writing: Interact with the AI to generate paper content, offering writing suggestions or answering questions.
+Literature Search: Search for relevant papers on Semantic Scholar, arxiv, and PubMed based on keywords and integrate the findings into your paper.
+Editing & Customization: Directly edit AI-generated content in the editor and adjust text style and layout with available tools."
+              ghLink="https://github.com/14790897/paper-ai"
+              demoLink="https://paperai.life"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={handwritingWeb}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="handwritingWeb"
+              description="Custom Fonts: Upload your own fonts or handwritten styles to generate unique handwriting.
+Background Image: Upload or automatically generate background images to add a personalized touch to your handwritten text.
+Adjustable Parameters: Control margins, character randomness, ink variations, and stroke rotations to fine-tune the handwriting appearance.
+File Import & Preview: Extract text from files like PDFs or DOCs, preview the handwriting in real-time, and generate a full set of images or export as a PDF."
+              ghLink="https://github.com/14790897/handwriting-web"
+              demoLink="https://handwrite.14790897.xyz"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={cookiesClerk}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="CookiesClerk"
+              description="Multi-Account Cookies Management: Manage cookies for multiple accounts on the same website, allowing simultaneous login to different accounts in the same browser.
+Easy Operation: Save, load, and delete cookies for different accounts with ease, enabling efficient multi-account management.
+Cleanup Functionality: One-click to clear cookies of closed accounts, keeping your browser organized and efficient.
+Installation & Tutorial: Easily install the extension from the Chrome Web Store, with available online tutorials and support."
+              ghLink="https://github.com/14790897/cookiesclerk"
+              demoLink="https://chromewebstore.google.com/detail/cookiesclerk/njmcgckgojpcificfmkicgnlbocgdhke"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -86,7 +96,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
